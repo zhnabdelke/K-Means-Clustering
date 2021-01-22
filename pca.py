@@ -37,3 +37,7 @@ class PCA:
         # the components are the eigenvectors from indices 0 to N
         # target dimensions
         self.pc = eigenvectors[: self.targetDimensions]
+
+    def project_data(self, data):
+        data -= self.mean
+        return np.dot(data, self.pc)
