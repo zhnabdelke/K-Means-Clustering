@@ -1,0 +1,5 @@
+nltk==3.5
+numpy==1.19.4
+tabulate==0.8.7
+PyStemmer==2.0.1
+scikit_learn==0.23.2
